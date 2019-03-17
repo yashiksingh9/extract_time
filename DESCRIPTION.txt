@@ -1,0 +1,51 @@
+mygmap
+======
+
+A simple time extractor from strings to use for any purpose.
+Use it to get hours and minutes out of a string in int format for making computation of them readly available.
+
+The code is Python 3 compatible.
+
+Installation
+------------
+
+Fast install:
+
+::
+
+    pip install time_extract
+
+For a manual install get this package:
+
+::
+
+    wget https://github.com/yashiksingh9/extract_time
+    cd mygmap-master
+
+Install the package:
+
+::
+
+    python setup.py install    
+
+Example
+--------
+
+.. code:: python
+
+    from extract_time import extract_time
+    text = "Set my alarm at 2:31 jason"
+
+    # get hour out of text
+    hour = extract_time.hour(text)
+    print(hour)
+
+    # get minutes out of text
+    minute = extract_time.minute(text)
+    print(minute)
+    
+
+Here is the output:
+
+    2
+    31
